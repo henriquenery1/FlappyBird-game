@@ -1,6 +1,3 @@
-console.log('[DevSoutinho] Flappy Bird');
-console.log('Inscreva-se no canal :D https://www.youtube.com/channel/UCzR2u5RWXWjUh7CwLSvbitA');
-
 let frames = 0;
 const som_HIT = new Audio();
 som_HIT.src = './efeitos/hit.wav';
@@ -11,8 +8,6 @@ sprites.src = './sprites.png';
 const canvas = document.querySelector('canvas');
 const contexto = canvas.getContext('2d');
 
-
-// [Plano de Fundo]
 const planoDeFundo = {
   spriteX: 390,
   spriteY: 0,
@@ -42,7 +37,6 @@ const planoDeFundo = {
   },
 };
 
-// [Chao]
 function criaChao() {
   const chao = {
     spriteX: 0,
@@ -55,10 +49,6 @@ function criaChao() {
       const movimentoDoChao = 1;
       const repeteEm = chao.largura / 2;
       const movimentacao = chao.x - movimentoDoChao;
-
-      // console.log('[chao.x]', chao.x);
-      // console.log('[repeteEm]',repeteEm);
-      // console.log('[movimentacao]', movimentacao % repeteEm);
       
       chao.x = movimentacao % repeteEm;
     },
@@ -133,7 +123,6 @@ function criaFlappyBird() {
     atualizaOFrameAtual() {     
       const intervaloDeFrames = 10;
       const passouOIntervalo = frames % intervaloDeFrames === 0;
-      // console.log('passouOIntervalo', passouOIntervalo)
 
       if(passouOIntervalo) {
         const baseDoIncremento = 1;
@@ -141,9 +130,6 @@ function criaFlappyBird() {
         const baseRepeticao = flappyBird.movimentos.length;
         flappyBird.frameAtual = incremento % baseRepeticao
       }
-        // console.log('[incremento]', incremento);
-        // console.log('[baseRepeticao]',baseRepeticao);
-        // console.log('[frame]', incremento % baseRepeticao);
     },
     desenha() {
       flappyBird.atualizaOFrameAtual();
@@ -162,7 +148,6 @@ function criaFlappyBird() {
 }
 
 
-/// [mensagemGetReady]
 const mensagemGetReady = {
   sX: 134,
   sY: 0,
@@ -181,7 +166,6 @@ const mensagemGetReady = {
   }
 }
 
-// [mensagemGameOver]
 const mensagemGameOver = {
   sX: 134,
   sY: 153,
@@ -199,10 +183,6 @@ const mensagemGameOver = {
     );
   }
 }
-
-// 
-// [Canos]
-// 
 
 function criaCanos() {
   const canos = {
@@ -413,6 +393,3 @@ window.addEventListener('click', function() {
 
 mudaParaTela(Telas.INICIO);
 loop();
-
-//Hello! World!!
-//teste power mode! 
