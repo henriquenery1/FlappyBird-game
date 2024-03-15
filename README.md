@@ -23,4 +23,4 @@ I developed this game as a way to train my skills in JavaScript.
 ## Credits
 - Original Flappy Bird game concept by Dong Nguyen
 - Tutorial series by Dev Soutinho
-- Developed by [Henrique] (https://github.com/henriquenery1)
+- Developed by [Henrique](https://github.com/henriquenery1)
