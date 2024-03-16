@@ -1,6 +1,7 @@
 # Flappy Bird
 
 This is a version of the Flappy Bird game
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 
 ## About
 This game is inspired by the original Flappy Bird and the tutorial series on the Dev Soutinho YouTube channel. You can find the tutorial playlist
